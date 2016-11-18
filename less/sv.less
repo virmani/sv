@@ -1,3 +1,24 @@
+@import "variables";
+
+.navbar-default {
+	background-color: @brand-primary;
+}
+
+.navbar-brand {
+	.navbar-brand-subtitle {
+		font-size: 0.8em;
+	}
+}
+
+
+@media(min-width:768px) {
+    .navbar-brand {
+		.navbar-brand-subtitle {
+			font-size: 0.6em;
+		}
+    }
+}
+
 header {
 	.credentials {
 		margin-top: 10px;
@@ -13,17 +34,62 @@ header {
 	}
 }
 
-.phone-contact {
-	background: url("../img/phone_icon.png") no-repeat left top;
-	background-size: 30px 30px;
-}
-
 .clinic-address {
 	background: url("../img/place_pin.png") no-repeat left top;
 	background-size: 20px 30px;
+	padding-left: 28px;
+}
+
+.locations-row {
+	margin-top: 10px; 
 }
 
 .location-col {
 	padding-left: 28px;
 	margin-bottom: 21px;
+}
+
+address {
+	margin-bottom: 6px;
+}
+
+
+ul.stylelist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.stylelist {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 0px solid #ccc;
+}
+
+li.stylelist {
+  text-decoration: none;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+}
+
+li.stylelist a {
+	color: @link-color;
+}
+
+li.stylelist a:hover {
+	background: none;
+}
+
+li.stylelist:hover {
+}
+
+div.title {
+	line-height: 1;
+}
+div.subtitle {
+	font-size: 0.8em;
 }
