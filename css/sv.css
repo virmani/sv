@@ -54,6 +54,8 @@ ul.stylelist {
 li.stylelist {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
   border-bottom: 0px solid #ccc;
+  line-height: 1.2;
+  padding-bottom: 8px;
 }
 li.stylelist {
   text-decoration: none;
