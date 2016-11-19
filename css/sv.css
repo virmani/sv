@@ -19,6 +19,14 @@
     font-size: 2em;
   }
 }
+@media (max-width: 310px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+  section h2 {
+    font-size: 1.8em;
+  }
+}
 header .credentials {
   margin-top: 10px;
 }
