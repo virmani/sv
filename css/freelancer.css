@@ -52,11 +52,11 @@ hr.star-light:after {
   color: white;
 }
 hr.star-primary {
-  border-color: #3c261f;
+  border-color: #311006;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #3c261f;
+  color: #311006;
 }
 .img-centered {
   margin: 0 auto;
@@ -134,7 +134,7 @@ header .intro-text .skills {
   border: none;
 }
 section {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 section h2 {
   margin: 0;
@@ -154,7 +154,7 @@ section.success a.active {
 }
 @media (max-width: 767px) {
   section {
-    padding: 30px 0;
+    padding: 75px 0;
   }
   section.first {
     padding-top: 75px;
@@ -281,14 +281,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #3c261f;
+  background-color: #311006;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #2b1b16;
+  background-color: #1a0903;
 }
 .btn-social {
   display: inline-block;
@@ -359,7 +359,7 @@ footer .footer-below {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #3c261f;
+  background-color: #311006;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -370,7 +370,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #3c261f;
+  background-color: #311006;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
