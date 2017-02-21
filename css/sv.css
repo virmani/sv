@@ -35,6 +35,10 @@ header .credentials .credential-title {
   font-size: 1.5em;
   font-weight: 700;
 }
+header .credentials .credential-title .credential-subtitle {
+  font-size: 0.8em;
+  padding-bottom: 10px;
+}
 header .credentials .credential-line {
   font-size: 1.2em;
   display: block;
@@ -86,8 +90,16 @@ div.title {
 div.subtitle {
   font-size: 0.8em;
 }
-@media (min-width: 1200px) {
-  img.profile-img {
-    max-width: 80%;
-  }
+div.text-blob {
+  font-size: 1.2em;
 }
+div.text-blob a {
+  color: #18BC9C;
+  text-decoration: underline;
+}
+/*@media (min-width: 1200px) { 
+	img.profile-img {
+		max-width: 100%;
+	}
+}
+*/

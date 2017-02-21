@@ -1,5 +1,12 @@
 @import "variables";
 
+.scale(@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+
 .navbar-default {
 	background-color: @brand-primary;
 }
@@ -53,6 +60,10 @@ header {
 			display: block;
 			font-size: 1.5em;
 			font-weight: 700;
+			.credential-subtitle {
+				font-size: 0.8em;
+				padding-bottom: 10px;
+			}
 		}
 		.credential-line {
 			font-size: 1.2em;
@@ -122,9 +133,17 @@ div.title {
 div.subtitle {
 	font-size: 0.8em;
 }
+div.text-blob {
+	font-size: 1.2em;
+	a {
+	    color: @link-color;
+	    text-decoration: underline;
+    }
+}
 
-@media (min-width: 1200px) { 
+/*@media (min-width: 1200px) { 
 	img.profile-img {
-		max-width: 80%;
+		max-width: 100%;
 	}
 }
+*/
