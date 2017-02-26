@@ -43,6 +43,14 @@ header .credentials .credential-line {
   font-size: 1.2em;
   display: block;
 }
+.wide-only {
+  display: none;
+}
+@media (min-width: 768px) {
+  .wide-only {
+    display: block;
+  }
+}
 .clinic-address {
   background: url("../img/place_pin.png") no-repeat left top;
   background-size: 20px 30px;
