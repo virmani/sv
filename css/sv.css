@@ -119,6 +119,13 @@ div.text-blob a {
   color: #18BC9C;
   text-decoration: underline;
 }
+
+.book-apptmnt-link {
+  border-width: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
 /*@media (min-width: 1200px) { 
 	img.profile-img {
 		max-width: 100%;

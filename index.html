@@ -42,6 +42,56 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Kivihealth scripts -->
+    <link rel="stylesheet" href="https://files.kivihealth.com/assets/css/widget.css">
+    <script type="application/ld+json">
+        {
+        "@context":"http://schema.org",
+        "@type":"MedicalOrganization",
+        "image": "https://kivihealth.com{{ asset('images/logos/clinic-profile.jpg') }}",
+        "@id":"https://kivihealth.com/clinic/maruti-clinic-for-children-orthopedic",
+        "name":"Maruti Clinic for Children Orthopaedics",
+        "address":{
+            "@type":"PostalAddress",
+            "streetAddress":"206, Near Community Centre, Sector 15 ",
+            "addressLocality":"Faridabad Sector 15",
+            "addressRegion":"Faridabad",
+            "postalCode":"121007",
+            "addressCountry":"IN"
+        },
+        "geo":{
+            "@type":"GeoCoordinates",
+            "latitude":"0",
+            "longitude":"0"
+        },
+        "telephone":"7404574046",
+        "potentialAction":{
+            "@type":"ReserveAction",
+            "target":{
+            "@type":"EntryPoint",
+            "urlTemplate":"https://kivihealth.com/bookappointment?d=16068&c=Faridabad&cl=6233&s=no",
+            "inLanguage":"en-US",
+            "actionPlatform":[
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/IOSPlatform",
+                "http://schema.org/AndroidPlatform"
+            ]
+            },
+            "result":{
+            "@type":"Reservation",
+            "name":"Book an Appointment"
+            }
+        },
+        "priceRange": "$"
+        }
+    </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -125,9 +175,19 @@
                         </div>                        
                          <div class="col-md-12">
                             <div class="credentials">
-                                <span class="credential-title">Contact & Availability</span>
+                                <span class="credential-title">Contact & Availability <span class="badge .badge-pill badge-success">Tele Consultation Available</span></span>
                                 <ul class="stylelist">
-                                    <li class="stylelist credential-line">For appointments: <a href="tel:+917404574046">74045-74046</a></li>
+                                    <li class="stylelist credential-line">For appointments: 
+
+                                        <span>
+                                            <button type="button" class="btn btn-link book-apptmnt-link" data-toggle="modal" data-target="#bookappointment">Book Here</button>
+                                            <a href="https://kivihealth.com" class="_kivi_powered_container" target="_blank" title="Search and Book Appointment with Pediatrician  in Faridabad">
+                                                </span>
+                                            </a>
+                                        </span>
+                                        
+                                        or call <a href="tel:+917404574046">74045-74046</a></li>
+
                                     <li class="stylelist credential-line">For other inquiries: <a href="tel:+919212520022">9212520022</a></li>
                                     <li class="stylelist credential-line">Available in Delhi, Gurgaon, and Faridabad. <a href="#locations">Details></a></li>
                                 </ul>
@@ -306,11 +366,20 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-blob">
-                    To make an appointment, please call <a href="tel:+917404574046">74045-74046</a>. For any other inquiries, call <a href="tel:+919212520022">9212520022</a><br><br>
+                    To make an appointment, please
+                    <span>
+                        <button type="button" class="btn btn-link book-apptmnt-link" data-toggle="modal" data-target="#bookappointment">Click Here</button>
+                        <a href="https://kivihealth.com" class="_kivi_powered_container" target="_blank" title="Search and Book Appointment with Pediatrician  in Faridabad">
+                            </span>
+                        </a>
+                    </span>
+                    or call <a href="tel:+917404574046">74045-74046</a>. For any other inquiries, call <a href="tel:+919212520022">9212520022</a><br><br>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Portfolio Grid Section -->
     <!--
@@ -658,12 +727,28 @@
         </div>
     </div>
 -->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Kivihealth -->
 
+    <div class="modal fade" id="bookappointment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                    <h4 class="modal-title themeColor" id="myModalLabel">Appointment Details</h4>
+                </div>
+                <div class="modal-body kivi_modal_body">
+                    <iframe id="MainPopupIframe" src="https://kivihealth.com/bookappointment?d=16068&c=Faridabad Sector 15&s=no" width="100%" height="100%" style="border:none"></iframe>
+                </div>
+                <div class="modal-footer" style="text-align:left">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kivi health -->
+
+            
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
