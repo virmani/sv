@@ -37,6 +37,8 @@
     <!-- Custom CSS -->
     <link href="css/sv.css" rel="stylesheet">
 
+    <link href="css/cookiealert.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -105,7 +107,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container">        
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -135,7 +137,7 @@
                         <a href="#locations">Locations</a>
                     </li>
                     <li class="page-scroll">
-                        <a class="btn btn-primary kivi_bookappt_btn kivi_bookappt_btn-labeled btn-success my-2 my-sm-0" data-toggle="modal" data-target="#bookappointment">Book Appointment</a>
+                        <a class="btn kivi_bookappt_btn kivi_bookappt_btn-labeled btn-success my-2 my-sm-0" data-toggle="modal" data-target="#bookappointment">Book Appointment</a>
                     </li>
                 </ul>
             </div>
@@ -147,7 +149,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="row">
+              <div class="row">
                 <div class="col-sm-4">
                     <span class="wide-only">
                         <img class="img-responsive profile-img" src="img/profile-sv.jpg" alt="Dr. Somesh Virmani">
@@ -174,7 +176,7 @@
                         </div>                        
                          <div class="col-md-12">
                             <div class="credentials">
-                                <span class="credential-title">Contact & Availability <span class="badge .badge-pill badge-success">Tele Consultation Available</span></span>
+                                <span class="credential-title">Contact & Availability</span>
                                 <ul class="stylelist">
                                     <li class="stylelist credential-line">For appointments: 
 
@@ -727,6 +729,19 @@
     </div>
 -->
 
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert show" role="alert">
+    <div class="container">
+        <div class="col-sm-8">
+            Due to the COVID-19 lockdown, we are providing tele-consultation over phone or video calls. 
+        </div>
+        <div class="col-sm-4">
+            <button type="button" class="btn kivi_bookappt_btn kivi_bookappt_btn-labeled btn-success my-2 my-sm-0" data-toggle="modal" data-target="#bookappointment">Book Appointment</button>
+        </div>
+    </div>    
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+
     <!-- Kivihealth -->
 
     <div class="modal fade" id="bookappointment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -752,6 +767,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+    
 
     <!-- Contact Form JavaScript -->
     <!--<script src="js/jqBootstrapValidation.js"></script>
