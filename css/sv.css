@@ -76,6 +76,12 @@ header .credentials .credential-line {
     display: none;
   }
 }
+
+section.practice_areas {
+  background: #1d1a29;
+  color: white;
+}
+
 .clinic-address {
   background: url("../img/place_pin.png") no-repeat left top;
   background-size: 20px 30px;
